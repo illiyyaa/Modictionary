@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY modictionary "http://www.semanticweb.org/user/ontologies/2020/4/modictionary#" >
+    <!ENTITY untitled-ontology-2 "http://www.semanticweb.org/user/ontologies/2020/4/untitled-ontology-2#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2020/4/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2020/4/untitled-ontology-2"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/user/ontologies/2020/4/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:modictionary="http://www.semanticweb.org/user/ontologies/2020/4/modictionary#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2020/4/modictionary"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#hasMatkul -->
+
+    <owl:ObjectProperty rdf:about="&modictionary;hasMatkul"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#JudulModul -->
+
+    <owl:DatatypeProperty rdf:about="&modictionary;JudulModul"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#NamaAsprak -->
+
+    <owl:DatatypeProperty rdf:about="&modictionary;NamaAsprak"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#NamaDosen -->
+
+    <owl:DatatypeProperty rdf:about="&modictionary;NamaDosen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#NamaMatkul -->
+
+    <owl:DatatypeProperty rdf:about="&modictionary;NamaMatkul"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Asprak -->
+
+    <owl:Class rdf:about="&modictionary;Asprak"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Dosen -->
+
+    <owl:Class rdf:about="&modictionary;Dosen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Matkul -->
+
+    <owl:Class rdf:about="&modictionary;Matkul"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Modul -->
+
+    <owl:Class rdf:about="&modictionary;Modul"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Asprak01 -->
+
+    <owl:NamedIndividual rdf:about="&modictionary;Asprak01">
+        <rdf:type rdf:resource="&modictionary;Asprak"/>
+        <modictionary:NamaAsprak>Angga</modictionary:NamaAsprak>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Dosen01 -->
+
+    <owl:NamedIndividual rdf:about="&modictionary;Dosen01">
+        <rdf:type rdf:resource="&modictionary;Dosen"/>
+        <modictionary:NamaDosen>Setiawan Hadi</modictionary:NamaDosen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Matkul01 -->
+
+    <owl:NamedIndividual rdf:about="&modictionary;Matkul01">
+        <rdf:type rdf:resource="&modictionary;Matkul"/>
+        <modictionary:NamaMatkul>PACD</modictionary:NamaMatkul>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Matkul02 -->
+
+    <owl:NamedIndividual rdf:about="&modictionary;Matkul02">
+        <rdf:type rdf:resource="&modictionary;Matkul"/>
+        <modictionary:NamaMatkul>Soft Computing</modictionary:NamaMatkul>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Modul01 -->
+
+    <owl:NamedIndividual rdf:about="&modictionary;Modul01">
+        <rdf:type rdf:resource="&modictionary;Modul"/>
+        <modictionary:JudulModul>Modul Praktikum PACD</modictionary:JudulModul>
+        <modictionary:hasMatkul rdf:resource="&modictionary;Matkul01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/4/modictionary#Modul02 -->
+
+    <owl:NamedIndividual rdf:about="&modictionary;Modul02">
+        <rdf:type rdf:resource="&modictionary;Modul"/>
+        <modictionary:JudulModul>Modul Praktikum Softkom</modictionary:JudulModul>
+        <modictionary:hasMatkul rdf:resource="&modictionary;Matkul02"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

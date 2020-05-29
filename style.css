@@ -1,0 +1,142 @@
+header
+
+
+h1{
+    color: #F24C00;
+    text-decoration: none;
+    font-weight: bold;
+  
+}
+
+
+h4{
+    color: blue; 
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+  
+}
+
+h5{
+
+  font-style: italic;
+  font-weight: normal;
+}
+
+h6{
+
+     font-style: italic;
+    font-weight: normal;
+    font-size: 90%;
+
+}
+
+body{
+    background-color: #E7E7E7;
+    font-family: sans-serif;
+ overflow-y: scroll;
+        overflow-x: hidden;
+}
+
+.a{
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+.bg{
+     background-color: #485696;
+     font-family: sans-serif;
+     width: 150%;
+     height: 70px;
+     font-size: 24px;
+     padding-left: 20px;
+     padding-right: 10px;
+     margin-right: 20px;
+     margin-left: 0px;
+    /* position: fixed;*/
+}
+
+.img{
+  margin-top: 10px;
+    width: 50px;
+}
+
+.button {
+    background-color: #F24C00;
+    border:none;
+    color: #e7e7e7;
+    padding: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+}
+
+.box {
+    /*background-color: #F24C00;*/
+    border:none;
+    color: #000000;
+    padding: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+}
+
+.boxin {
+    border-style: none; 
+    border-color: #00000
+    color: #000000;
+    padding: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5%;
+
+}
+ #wrapper{
+        width: 1500px;
+        margin: 0 auto;
+ }
+ #sidebar{
+    background: #f9c784;
+    width: 190px;
+    float: left;
+    position: fixed;
+    padding: 5px;
+ }
+
+ #content{
+   float: left;
+   width: 760px;
+   margin-left: 300px;
+   padding: 15px;
+   background: #E7E7E7;
+ }
+
+ ul{
+    background: #485696;
+    padding: 5px;
+ }
+
+ ul li{
+    list-style-type: none;
+    border-bottom: 1px solid #E7E7E7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ 
+ }
+
+ ul li a{
+    text-decoration: none
+    color: #E7E7E7;
+ }
