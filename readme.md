@@ -11,6 +11,7 @@ Modictionary is a web application that helps Computer Science students from Padj
 - Search Lab Assistant
 - Search Lab Subject
 - Search Subject Lecturer
+
 Laundryment a.k.a Modul Disctionary is helpful, powerful, and easy tools for students.
 
 ## How to Use Modictionary
