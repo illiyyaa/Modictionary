@@ -1,0 +1,10 @@
+@prefix mp: <http://www.semanticweb.org/user/ontologies/2020/4/untitled-ontology-2>.
+
+SELECT ?matkul ?judulmodul ?dosen ?asprak 
+        WHERE
+        { ?d
+          	    mp:matkul    ?matkul ;
+                mp:judulmatkul    ?judulmatkul ;
+                mp:dosen    ?dosen ;
+                mp:asprak    ?asprak ;
+        }
