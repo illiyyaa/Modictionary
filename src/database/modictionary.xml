@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:mp="http://www.modictionary.org/ns/praktikum#"
+         xmlns:id="http://www.modictionary.org/ns/data#">
+
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#001">
+    <mp:matkul>PACD</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Pengolahan dan Analisis Citra</mp:judulmodul>
+    <mp:dosen>Setiawan Hadi</mp:dosen>
+    <mp:asprak>Angga</mp:asprak>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#002">
+    <mp:matkul>Softcom</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Software Computing</mp:judulmodul>
+    <mp:dosen>Intan Nurma Yulita</mp:dosen>
+    <mp:asprak>Angga</mp:asprak>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#003">
+    <mp:matkul>Login</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Logika Informatika</mp:judulmodul>
+    <mp:dosen>Ino Suryana</mp:dosen>
+    <mp:asprak>Marcel</mp:asprak>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#004">
+    <mp:matkul>Orarkom</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Arsitektur dan Organisasi Komputer</mp:judulmodul>
+    <mp:dosen>Ino Suryana</mp:dosen>
+    <mp:asprak>Argil</mp:asprak>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#005">
+    <mp:matkul>Pemweb</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Pemrograman Web</mp:judulmodul>
+    <mp:dosen>Rudi Rosadi</mp:dosen>
+    <mp:asprak>Dila</mp:asprak>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#006">
+    <mp:matkul>Jarkom</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Jaringan Komputer</mp:judulmodul>
+    <mp:dosen>Aditya Pradana</mp:dosen>
+    <mp:asprak>Achun</mp:asprak>
+  </rdf:Description>
+
+
+</rdf:RDF>

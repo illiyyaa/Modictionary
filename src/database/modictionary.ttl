@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix mp: <http://www.modictionary.org/ns/praktikum#>.
+@prefix id: <http://www.modictionary.org/ns/data#>.
+
+
+<id:001> 
+		mp: matkul		"PACD";
+		mp: judulmodul	"Modul Praktikum Pengolahan dan Analisis Citra";
+		mp: dosen		"Setiawan Hadi";
+		mp: asprak		"Angga".
+
+<id:002>
+		mp: matkul		"Softcom";
+		mp: judulmodul	"Modul Praktikum Software Computing";
+		mp: dosen		"Intan Nurma Yulita";
+		mp: asprak		"Angga".
+
+<id:003> 
+		mp: matkul		"Login";
+		mp: judulmodul	"Modul Praktikum Logika Informatika";
+		mp: dosen		"Ino Suryana";
+		mp: asprak		"Marcel".
+
+<id:004>
+		mp: matkul		"Orarkom";
+		mp: judulmodul	"Modul Praktikum Arsitektur dan Organisasi Komputer";
+		mp: dosen		"Ino Suryana";
+		mp: asprak		"Argil".
+
+<id:005> 
+		mp: matkul		"Pemweb";
+		mp: judulmodul	"Modul Praktikum Pemrograman Web";
+		mp: dosen		"Rudi Rosadi";
+		mp: asprak		"Dila".
+
+<id:006>
+		mp: matkul		"Jarkom";
+		mp: judulmodul	"Modul Praktikum Jaringan Komputer";
+		mp: dosen		"Aditya Pradana";
+		mp: asprak		"Achun".
