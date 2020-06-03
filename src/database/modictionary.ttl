@@ -8,33 +8,40 @@
 		mp: judulmodul	"Modul Praktikum Pengolahan dan Analisis Citra";
 		mp: dosen		"Setiawan Hadi";
 		mp: asprak		"Angga".
+		mp: semester	"6".
 
 <id:002>
 		mp: matkul		"Softcom";
 		mp: judulmodul	"Modul Praktikum Software Computing";
 		mp: dosen		"Intan Nurma Yulita";
 		mp: asprak		"Angga".
+		mp: semester	"6".
 
 <id:003> 
 		mp: matkul		"Login";
 		mp: judulmodul	"Modul Praktikum Logika Informatika";
 		mp: dosen		"Ino Suryana";
 		mp: asprak		"Marcel".
+		mp: semester	"1".
 
 <id:004>
 		mp: matkul		"Orarkom";
 		mp: judulmodul	"Modul Praktikum Arsitektur dan Organisasi Komputer";
 		mp: dosen		"Ino Suryana";
 		mp: asprak		"Argil".
+		mp: semester	"2".
+
 
 <id:005> 
 		mp: matkul		"Pemweb";
 		mp: judulmodul	"Modul Praktikum Pemrograman Web";
 		mp: dosen		"Rudi Rosadi";
 		mp: asprak		"Dila".
+		mp: semester	"4".
 
 <id:006>
 		mp: matkul		"Jarkom";
 		mp: judulmodul	"Modul Praktikum Jaringan Komputer";
 		mp: dosen		"Aditya Pradana";
 		mp: asprak		"Achun".
+		mp: semester	"5".	
