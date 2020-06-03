@@ -1,11 +1,13 @@
-var NewComponent = React.createClass({
-  render: function() {
+import React from 'react';
+import logo from './logo.png';
+import { Link } from "react-router-dom";
+export default function App(){
     return (
       <div>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Modictionary</title>
-        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}><img className="img" src="images/logo.png" />  Modictionary</header>
+        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}><img className="img" src="./logo.png" />  Modictionary</header>
         <div id="wrapper">
           <div id="sidebar">
             <ul>
@@ -49,5 +51,4 @@ var NewComponent = React.createClass({
         </div>
       </div>
     );
-  }
-});
+  };
