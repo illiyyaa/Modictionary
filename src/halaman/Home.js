@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.png';
 import axios from 'axios';
 import qs from 'qs';
+import '../style.css';
 
 import { Link } from 'react-router-dom';
 
@@ -98,7 +99,7 @@ const result = value.mp.map((mp) =>
     return (
       <div>
         <title>Modictionary</title>
-        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}> <img className="img" src=""/>  Modictionary</header>
+        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}><img className="img" src="./logo.png" />  Modictionary</header>
         <div id="wrapper">
           <div id="sidebar">
             <ul>
@@ -130,9 +131,9 @@ const result = value.mp.map((mp) =>
           </center>
           {/* Hasil Pencarian */}
           <div class="result">
-            <h2>
+            <center><h2>
               Hasil Pencarian Modul Praktikum
-            </h2>
+            </h2></center>
             {result}
           </div>
           </div>
