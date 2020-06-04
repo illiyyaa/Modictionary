@@ -77,22 +77,17 @@ const handleChangematkul = event => {
 }
 
 
-
-//nampilin
 const result = value.mp.map((mp) =>
-  <div className="container">
+  <div class="card">
     <div key={mp.id}>
-      <div className="col-md-10">
-        <div className="judulmodul">{mp.judulmodul}</div>
+      <div className="container">
+        <div className="judulmodul">Judul Modul : {mp.judulmodul}</div>
         <div class="row">
-          <div class="col-md-5">
-            {mp.matkul}
+          <div class="col-md-2">
+            Nama Dosen : {mp.dosen}  
           </div>
           <div class="col-md-2">
-            {mp.dosen}  
-          </div>
-          <div class="col-md-2">
-            {mp.asprak}
+            Nama Asisten Praktikum : {mp.asprak}
           </div>
         </div>  
       </div>
@@ -103,13 +98,13 @@ const result = value.mp.map((mp) =>
     return (
       <div>
         <title>Modictionary</title>
-        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}><img className="img" src={logo} />  Modictionary</header>
+        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}> <img className="img" src=""/>  Modictionary</header>
         <div id="wrapper">
           <div id="sidebar">
             <ul>
-              <li><Link to="">Home</Link></li>
-              <li><Link to="">About</Link></li>
-              <li><Link to="">Contact</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/semester1">Semester 1</Link></li>
               <li><Link to="/semester2">Semester 2</Link></li>
               <li><Link to="/semester3">Semester 3</Link></li>
@@ -135,12 +130,10 @@ const result = value.mp.map((mp) =>
           </center>
           {/* Hasil Pencarian */}
           <div class="result">
-            <h5>
+            <h2>
               Hasil Pencarian Modul Praktikum
-            </h5>
-            <div>
-              {result}
-            </div>
+            </h2>
+            {result}
           </div>
           </div>
       </div>

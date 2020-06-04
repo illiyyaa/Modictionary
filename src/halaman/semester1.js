@@ -9,15 +9,15 @@ export default function semester1(){
         <div id="wrapper">
           <div id="sidebar">
             <ul>
-              <li><Link to="/" >Home</Link></li>
-              <li><Link to="" >About</Link></li>
-              <li><Link to="" >Contact</Link></li>
-              <li><Link to="/halaman/semester1.js">Semester 1</Link></li>
-              <li><Link to="/halaman/semester2.js" >Semester 2</Link></li>
-              <li><Link to="/halaman/semester3.js" >Semester 3</Link></li>
-              <li><Link to="/halaman/semester4.js" >Semester 4</Link></li>
-              <li><Link to="/halaman/semester5.js" >Semester 5</Link></li>
-              <li><Link to="/halaman/semester6.js" >Semester 6</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/semester1">Semester 1</Link></li>
+              <li><Link to="/semester2">Semester 2</Link></li>
+              <li><Link to="/semester3">Semester 3</Link></li>
+              <li><Link to="/semester4">Semester 4</Link></li>
+              <li><Link to="/semester5">Semester 5</Link></li>
+              <li><Link to="/semester6">Semester 6</Link></li>
             </ul>
           </div>
         </div>
