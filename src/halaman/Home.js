@@ -13,6 +13,7 @@ export default function Home(){
     matkul:'',
     dosen :'',
     asprak :'',
+    semester : '',
   });
 
   const getData = async () => {
@@ -26,13 +27,14 @@ export default function Home(){
     query:
       `PREFIX mp: <http://www.modictionary.org/ns/praktikum#>
 
-      SELECT ?matkul ?judulmodul ?dosen ?asprak 
+      SELECT ?matkul ?judulmodul ?dosen ?asprak ?semester
         WHERE
         { ?id
           	    mp:matkul    ?matkul ;
                 mp:judulmodul    ?judulmodul ;
                 mp:dosen    ?dosen ;
                 mp:asprak    ?asprak ;
+                mp:semester ?semester ;
               FILTER contains(lcase(str(?matkul)), lcase(str("${value.matkul ? value.matkul : ''}")))
       }`
   };
@@ -63,7 +65,8 @@ const formatter = (mp, index) => {
     "judulmodul": mp.judulmodul.value,
     "matkul": mp.matkul.value,
     "dosen": mp.dosen.value,
-    "asprak": mp.asprak.value
+    "asprak": mp.asprak.value,
+    "semester" : mp.semester.value
   }
 }
 
@@ -89,6 +92,9 @@ const result = value.mp.map((mp) =>
           </div>
           <div class="col-md-2">
             Nama Asisten Praktikum : {mp.asprak}
+          </div>
+          <div class="col-md-2">
+            Semester : {mp.semester}
           </div>
         </div>  
       </div>
