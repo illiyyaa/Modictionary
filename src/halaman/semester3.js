@@ -1,11 +1,9 @@
 import React from 'react';
 import logo from './logo.png';
 import { Link } from "react-router-dom";
-export default function App(){
+export default function semester3(){
     return (
       <div>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Modictionary</title>
         <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}><img className="img" src="./logo.png" />  Modictionary</header>
         <div id="wrapper">
