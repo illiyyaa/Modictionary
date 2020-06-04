@@ -105,36 +105,70 @@ const result = value.mp.map((mp) =>
     return (
       <div>
         <title>Modictionary</title>
-        <header style={{color: '#e7e7e7', backgroundColor: '#485696', display: 'block'}}><img className="img" src="./logo.png" />  Modictionary</header>
-        <div id="wrapper">
-          <div id="sidebar">
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/semester1">Semester 1</Link></li>
-              <li><Link to="/semester2">Semester 2</Link></li>
-              <li><Link to="/semester3">Semester 3</Link></li>
-              <li><Link to="/semester4">Semester 4</Link></li>
-              <li><Link to="/semester5">Semester 5</Link></li>
-              <li><Link to="/semester6">Semester 6</Link></li>
-            </ul>
-          </div>
-        </div>
-        {/* 	<i style="color:#3d3d29;">hi</i> */}
-        <div id="content">
-          <center> <h1>Cari Modul Praktikum</h1> 
-            <form>
-              <input className="boxin" type="text" name="k" size={50 } onChange={handleChangematkul} setValue={value.matkul}/>          
+        <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img className="img" src={logo} /> 
+        Modictionary
+        
+              <input className="boxin"type="text" name="k" size={50 } onChange={handleChangematkul} setValue={value.matkul}/>          
               <input 
-                type="button"
+                type="button" style={{ float:'right'}}
                 className="button"
                 id="search"
                 placeholder="Mata Kuliah"
                 value="Cari Matkul"
                 onClick={getData}/>
-            </form>
-          </center>
+            
+        </header>
+        
+        {/* <div id="wrapper">
+          
+        </div> */}
+        {/* 	<i style="color:#3d3d29;">hi</i> */}
+        <div id="content">
+          <center> <h1>Cari Modul Praktikum</h1> </center>
+            <input 
+                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d', display:'inline-block'}}
+                className="button"
+                id="search"
+                placeholder="Mata Kuliah"
+                value="Semester 1"
+                onClick={getData}/> 
+            <input 
+                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d', display:'inline-block'}}
+                className="button"
+                id="search"
+                placeholder="Mata Kuliah"
+                value="Semester 2"
+                onClick={getData}/>
+            <input 
+                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d'}}
+                className="button"
+                id="search"
+                placeholder="Mata Kuliah"
+                value="Semester 3"
+                onClick={getData}/>
+                <br></br>
+            <input 
+                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d'}}
+                className="button"
+                id="search"
+                placeholder="Mata Kuliah"
+                value="Semester 4"
+                onClick={getData}/>
+            <input 
+                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d',display:'inline-block'}}
+                className="button"
+                id="search"
+                placeholder="Mata Kuliah"
+                value="Semester 4"
+                onClick={getData}/>
+            <input 
+                type="button" class="flex"style={{width:'30%', height:'150px', background: '#0e0d3d', display:'inline-block'}}
+                className="button"
+                id="search"
+                placeholder="Mata Kuliah"
+                value="Semester 4"
+                onClick={getData}/>
+
           {/* Hasil Pencarian */}
           <div class="result">
             <center><h2>

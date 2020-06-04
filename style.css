@@ -44,7 +44,7 @@ body{
 }
 
 .bg{
-     background-color: #485696;
+     background-color:#17155e;
      font-family: sans-serif;
      width: 150%;
      height: 70px;
@@ -91,7 +91,7 @@ body{
 
 .boxin {
     border-style: none; 
-    border-color: #00000
+    border-color: #000000;
     color: #000000;
     padding: none;
     text-align: center;
@@ -124,7 +124,7 @@ body{
  }
 
  ul{
-    background: #485696;
+    background: #17155e;
     padding: 5px;
  }
 
@@ -137,6 +137,6 @@ body{
  }
 
  ul li a{
-    text-decoration: none
+    text-decoration: none;
     color: #E7E7E7;
  }
