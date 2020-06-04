@@ -11,15 +11,15 @@ export default function App(){
         <div id="wrapper">
           <div id="sidebar">
             <ul>
-              <li><a className="a" href="#">Home</a></li>
-              <li><a className="a" href="#">About</a></li>
-              <li><a className="a" href="#">Contact</a></li>
-              <li><a className="a" href="#">Semester 1</a></li>
-              <li><a className="a" href="#">Semester 2</a></li>
-              <li><a className="a" href="#">Semester 3</a></li>
-              <li><a className="a" href="#">Semester 4</a></li>
-              <li><a className="a" href="#">Semester 5</a></li>
-              <li><a className="a" href="#">Semester 6</a></li>
+              <li><Link to="/" >Home</Link></li>
+              <li><Link to="" >About</Link></li>
+              <li><Link to="" >Contact</Link></li>
+              <li><Link to="/halaman/semester1.js">Semester 1</Link></li>
+              <li><Link to="/halaman/semester2.js" >Semester 2</Link></li>
+              <li><Link to="/halaman/semester3.js" >Semester 3</Link></li>
+              <li><Link to="/halaman/semester4.js" >Semester 4</Link></li>
+              <li><Link to="/halaman/semester5.js" >Semester 5</Link></li>
+              <li><Link to="/halaman/semester6.js" >Semester 6</Link></li>
             </ul>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function App(){
             <form action="./search.php" method="get">
               <input className="boxin" type="text" name="k" size={50} />
               <br />
-              <b>Sort by</b>
+              <b>Search by  </b>
               <select className="box " name="by">
                 <option value>Sort</option>
                 <option value="ModulID">Id</option>
