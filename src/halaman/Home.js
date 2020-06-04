@@ -110,12 +110,12 @@ const result = value.mp.map((mp) =>
               <li><Link to="">Home</Link></li>
               <li><Link to="">About</Link></li>
               <li><Link to="">Contact</Link></li>
-              <li><Link to="">Semester 1</Link></li>
-              <li><Link to="">Semester 2</Link></li>
-              <li><Link to="">Semester 3</Link></li>
-              <li><Link to="">Semester 4</Link></li>
-              <li><Link to="">Semester 5</Link></li>
-              <li><Link to="">Semester 6</Link></li>
+              <li><Link to="/semester1">Semester 1</Link></li>
+              <li><Link to="/semester2">Semester 2</Link></li>
+              <li><Link to="/semester3">Semester 3</Link></li>
+              <li><Link to="/semester4">Semester 4</Link></li>
+              <li><Link to="/semester5">Semester 5</Link></li>
+              <li><Link to="/semester6">Semester 6</Link></li>
             </ul>
           </div>
         </div>

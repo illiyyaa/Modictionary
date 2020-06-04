@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
-import semester3 from './halaman/semester3.js';
 import axios from 'axios';
 import qs from 'qs';
 import logo from './halaman/logo.png';
