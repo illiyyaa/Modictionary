@@ -31,7 +31,6 @@
 		mp: asprak		"Argil".
 		mp: semester	"2".
 
-
 <id:005> 
 		mp: matkul		"Pemweb";
 		mp: judulmodul	"Modul Praktikum Pemrograman Web";
@@ -44,4 +43,74 @@
 		mp: judulmodul	"Modul Praktikum Jaringan Komputer";
 		mp: dosen		"Aditya Pradana";
 		mp: asprak		"Achun".
-		mp: semester	"5".	
+		mp: semester	"5".
+		
+<id:007>
+		mp: matkul		"HCI";
+		mp: judulmodul	"Modul Praktikum Interaksi Manusia dan Komputer";
+		mp: dosen		"Mira Suryani";
+		mp: asprak		"Syafira".
+		mp: semester	"6".	
+
+<id:008>
+		mp: matkul		"PPL";
+		mp: judulmodul	"Modul Praktikum Projek Prangkat Lunak";
+		mp: dosen		"Juli Rejito";
+		mp: asprak		"Islam".
+		mp: semester	"6".
+
+<id:009>
+		mp: matkul		"Datware";
+		mp: judulmodul	"Modul Praktikum Data Warehous";
+		mp: dosen		"Intan Nurma Yulita";
+		mp: asprak		"Paquita".
+		mp: semester	"6".
+
+<id:010>
+		mp: matkul		"Alprog";
+		mp: judulmodul	"Modul Praktikum Algoritma Pemrogrman";
+		mp: dosen		"Mira Suryani";
+		mp: asprak		"Achun".
+		mp: semester	"1".
+
+<id:011>
+		mp: matkul		"Strukdat";
+		mp: judulmodul	"Modul Praktikum Struktur Data";
+		mp: dosen		"Aditya Pradana";
+		mp: asprak		"Argil".
+		mp: semester	"2".
+
+<id:012>
+		mp: matkul		"Sisdat";
+		mp: judulmodul	"Modul Praktikum Sistem Database";
+		mp: dosen		"Juli Rejito";
+		mp: asprak		"Cryssa".
+		mp: semester	"2".
+
+<id:013>
+		mp: matkul		"PBO";
+		mp: judulmodul	"Modul Praktikum Pemrograan Berorientasi Objek";
+		mp: dosen		"Erick Paulus";
+		mp: asprak		"Argil".
+		mp: semester	"3".
+
+<id:014>
+		mp: matkul		"AI";
+		mp: judulmodul	"Modul Praktikum Artificial Intellegence";
+		mp: dosen		"Asep Sholahuddin";
+		mp: asprak		"Fahmi".
+		mp: semester	"4".
+
+<id:015>
+		mp: matkul		"Sisdat";
+		mp: judulmodul	"Modul Praktikum Sistem Database";
+		mp: dosen		"Juli Rejito";
+		mp: asprak		"Cryssa".
+		mp: semester	"2".
+
+<id:016>
+		mp: matkul		"Robotika";
+		mp: judulmodul	"Modul Praktikum Robotika";
+		mp: dosen		"Asep Sholahuddin";
+		mp: asprak		"Angga".
+		mp: semester	"5".
