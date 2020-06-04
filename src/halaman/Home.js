@@ -7,6 +7,7 @@ import '../style.css';
 import { Link } from 'react-router-dom';
 
 export default function Home(){
+  //deklarasi awal
   const [value, setValue] = useState({
     mp: [],
     judulmodul: '',
@@ -15,7 +16,7 @@ export default function Home(){
     asprak :'',
     semester : '',
   });
-
+//ambil data
   const getData = async () => {
     const BASE_URL = "http://localhost:3030/modic-semweb/query";
 
@@ -35,7 +36,8 @@ export default function Home(){
                 mp:dosen    ?dosen ;
                 mp:asprak    ?asprak ;
                 mp:semester ?semester ;
-              FILTER contains(lcase(str(?matkul)), lcase(str("${value.matkul ? value.matkul : ''}")))
+              FILTER contains(lcase(str(?matkul)), lcase(str("${value.matkul}")))
+              FILTER contains(?semester, "${value.semester}")
       }`
   };
   try {
@@ -58,7 +60,7 @@ export default function Home(){
     console.error(err);
   }
 }
-
+//format
 const formatter = (mp, index) => {
   return {
     "id": index,
@@ -70,21 +72,24 @@ const formatter = (mp, index) => {
   }
 }
 
-
 //handlechange
-
 const handleChangematkul = event => {
   setValue({
     ...value,  
     'matkul': event.target.value, 
   });
 }
-
+const handleChangesemester = event => {
+  setValue({
+    ...value,  
+    'semester': event.target.value, 
+  });
+}
 
 const result = value.mp.map((mp) =>
+  <div class="container" style={{display:'flex'}}>
   <div class="card">
     <div key={mp.id}>
-      <div className="container">
         <div className="judulmodul">Judul Modul : {mp.judulmodul}</div>
         <div class="row">
           <div class="col-md-2">
@@ -97,7 +102,7 @@ const result = value.mp.map((mp) =>
             Semester : {mp.semester}
           </div>
         </div>  
-      </div>
+    </div>
     </div>
   </div>
 )
@@ -107,7 +112,6 @@ const result = value.mp.map((mp) =>
         <title>Modictionary</title>
         <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img className="img" src={logo} /> 
         Modictionary
-        
               <input className="boxin"type="text" name="k" size={50 } onChange={handleChangematkul} setValue={value.matkul}/>          
               <input 
                 type="button" style={{ float:'right'}}
@@ -116,7 +120,6 @@ const result = value.mp.map((mp) =>
                 placeholder="Mata Kuliah"
                 value="Cari Matkul"
                 onClick={getData}/>
-            
         </header>
         
         {/* <div id="wrapper">
@@ -125,55 +128,29 @@ const result = value.mp.map((mp) =>
         {/* 	<i style="color:#3d3d29;">hi</i> */}
         <div id="content">
           <center> <h1>Cari Modul Praktikum</h1> </center>
-            <input 
-                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d', display:'inline-block'}}
+          <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} setValue={value.semester} onChange={handleChangesemester}>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+          </select>
+          <input 
+                type="button" style={{ float:'right'}}
                 className="button"
                 id="search"
                 placeholder="Mata Kuliah"
-                value="Semester 1"
-                onClick={getData}/> 
-            <input 
-                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d', display:'inline-block'}}
-                className="button"
-                id="search"
-                placeholder="Mata Kuliah"
-                value="Semester 2"
-                onClick={getData}/>
-            <input 
-                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d'}}
-                className="button"
-                id="search"
-                placeholder="Mata Kuliah"
-                value="Semester 3"
-                onClick={getData}/>
-                <br></br>
-            <input 
-                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d'}}
-                className="button"
-                id="search"
-                placeholder="Mata Kuliah"
-                value="Semester 4"
-                onClick={getData}/>
-            <input 
-                type="button" style={{width:'30%', height:'150px', background: '#0e0d3d',display:'inline-block'}}
-                className="button"
-                id="search"
-                placeholder="Mata Kuliah"
-                value="Semester 4"
-                onClick={getData}/>
-            <input 
-                type="button" class="flex"style={{width:'30%', height:'150px', background: '#0e0d3d', display:'inline-block'}}
-                className="button"
-                id="search"
-                placeholder="Mata Kuliah"
-                value="Semester 4"
+                value="Cari Modul"
                 onClick={getData}/>
 
           {/* Hasil Pencarian */}
+          
           <div class="result">
             <center><h2>
               Hasil Pencarian Modul Praktikum
-            </h2></center>
+            </h2>
+            </center>
             {result}
           </div>
           </div>
