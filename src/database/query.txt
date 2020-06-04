@@ -1,8 +1,8 @@
-@prefix mp: <http://www.semanticweb.org/user/ontologies/2020/4/untitled-ontology-2>.
+@prefix mp: <http://www.modictionary.org/ns/praktikum#>.
 
 SELECT ?matkul ?judulmodul ?dosen ?asprak 
         WHERE
-        { ?d
+        { ?id
           	    mp:matkul    ?matkul ;
                 mp:judulmatkul    ?judulmatkul ;
                 mp:dosen    ?dosen ;
