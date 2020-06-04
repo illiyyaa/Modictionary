@@ -9,6 +9,7 @@
     <mp:judulmodul>Modul Praktikum Pengolahan dan Analisis Citra</mp:judulmodul>
     <mp:dosen>Setiawan Hadi</mp:dosen>
     <mp:asprak>Angga</mp:asprak>
+    <mp:semester>6</mp:semester>
   </rdf:Description>
 
 <rdf:Description rdf:about="http://www.modictionary.org/ns/data#002">
@@ -16,6 +17,7 @@
     <mp:judulmodul>Modul Praktikum Software Computing</mp:judulmodul>
     <mp:dosen>Intan Nurma Yulita</mp:dosen>
     <mp:asprak>Angga</mp:asprak>
+    <mp:semester>6</mp:semester>
   </rdf:Description>
 
 <rdf:Description rdf:about="http://www.modictionary.org/ns/data#003">
@@ -23,6 +25,7 @@
     <mp:judulmodul>Modul Praktikum Logika Informatika</mp:judulmodul>
     <mp:dosen>Ino Suryana</mp:dosen>
     <mp:asprak>Marcel</mp:asprak>
+    <mp:semester>1</mp:semester>
   </rdf:Description>
 
 <rdf:Description rdf:about="http://www.modictionary.org/ns/data#004">
@@ -30,6 +33,7 @@
     <mp:judulmodul>Modul Praktikum Arsitektur dan Organisasi Komputer</mp:judulmodul>
     <mp:dosen>Ino Suryana</mp:dosen>
     <mp:asprak>Argil</mp:asprak>
+    <mp:semester>2</mp:semester>
   </rdf:Description>
 
 <rdf:Description rdf:about="http://www.modictionary.org/ns/data#005">
@@ -37,6 +41,7 @@
     <mp:judulmodul>Modul Praktikum Pemrograman Web</mp:judulmodul>
     <mp:dosen>Rudi Rosadi</mp:dosen>
     <mp:asprak>Dila</mp:asprak>
+    <mp:semester>4</mp:semester>
   </rdf:Description>
 
 <rdf:Description rdf:about="http://www.modictionary.org/ns/data#006">
@@ -44,7 +49,79 @@
     <mp:judulmodul>Modul Praktikum Jaringan Komputer</mp:judulmodul>
     <mp:dosen>Aditya Pradana</mp:dosen>
     <mp:asprak>Achun</mp:asprak>
+    <mp:semester>5</mp:semester>
   </rdf:Description>
 
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#007">
+    <mp:matkul>HCI</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Interaksi Manusia dan Komputer</mp:judulmodul>
+    <mp:dosen>Mira Suryani</mp:dosen>
+    <mp:asprak>Syafira</mp:asprak>
+    <mp:semester>6</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#008">
+    <mp:matkul>PPL</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Projek Perangkat Lunak</mp:judulmodul>
+    <mp:dosen>Juli Rejito</mp:dosen>
+    <mp:asprak>Islam</mp:asprak>
+    <mp:semester>6</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#009">
+    <mp:matkul>Datware</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Data Warehouse</mp:judulmodul>
+    <mp:dosen>Intan Nurma Yulita</mp:dosen>
+    <mp:asprak>Paquita</mp:asprak>
+    <mp:semester>6</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#010">
+    <mp:matkul>Alprog</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Algoritma dan Pemrograman</mp:judulmodul>
+    <mp:dosen>Mira Suryani</mp:dosen>
+    <mp:asprak>Achun</mp:asprak>
+    <mp:semester>1</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#011">
+    <mp:matkul>Strukdat</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Struktur Data</mp:judulmodul>
+    <mp:dosen>Aditya Pradana</mp:dosen>
+    <mp:asprak>Argil</mp:asprak>
+    <mp:semester>2</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#012">
+    <mp:matkul>Sisdat</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Interaksi Manusia dan Komputer</mp:judulmodul>
+    <mp:dosen>Juli Rejito</mp:dosen>
+    <mp:asprak>Cryssa</mp:asprak>
+    <mp:semester>2</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#013">
+    <mp:matkul>PBO</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Pemrograman Berorientasi Objek</mp:judulmodul>
+    <mp:dosen>Erick Paulus</mp:dosen>
+    <mp:asprak>Argil</mp:asprak>
+    <mp:semester>3</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#014">
+    <mp:matkul>AI</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Artificial Intellegence</mp:judulmodul>
+    <mp:dosen>Asep Sholahuddin</mp:dosen>
+    <mp:asprak>Fahmi</mp:asprak>
+    <mp:semester>4</mp:semester>
+  </rdf:Description>
+
+<rdf:Description rdf:about="http://www.modictionary.org/ns/data#015">
+    <mp:matkul>Robotika</mp:matkul>
+    <mp:judulmodul>Modul Praktikum Robotika</mp:judulmodul>
+    <mp:dosen>Asep Sholahuddin</mp:dosen>
+    <mp:asprak>Angga</mp:asprak>
+    <mp:semester>5</mp:semester>
+  </rdf:Description>
 
 </rdf:RDF>
