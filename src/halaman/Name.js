@@ -6,7 +6,7 @@ import '../style.css';
 
 import { Link } from 'react-router-dom';
 
-export default function Home(){
+export default function Tes(){
   //deklarasi awal
   const [value, setValue] = useState({
     mp: [],
@@ -79,12 +79,6 @@ const handleChangematkul = event => {
     'matkul': event.target.value, 
   });
 }
-const handleChangesemester = event => {
-  setValue({
-    ...value,  
-    'semester': event.target.value, 
-  });
-}
 
 const result = value.mp.map((mp) =>
   <div class="container" style={{display:'flex'}}>
@@ -112,7 +106,7 @@ const result = value.mp.map((mp) =>
         <title>Modictionary</title>
         <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img className="img" src={logo} /> 
         Modictionary
-        <Link to="name" className="button"  style={{ float:'right'}} >Search by name</Link>
+        <Link to="/" className="button"  style={{ float:'right'}} >Search by semester</Link>
         </header>
         
         {/* <div id="wrapper">
@@ -120,22 +114,18 @@ const result = value.mp.map((mp) =>
         </div> */}
         {/* 	<i style="color:#3d3d29;">hi</i> */}
         <div id="content">
-          <center> <h1>Cari Modul Praktikum</h1> </center>
-          <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} setValue={value.semester} onChange={handleChangesemester}>
-            <option value="1">Semester 1</option>
-            <option value="2">Semester 2</option>
-            <option value="3">Semester 3</option>
-            <option value="4">Semester 4</option>
-            <option value="5">Semester 5</option>
-            <option value="6">Semester 6</option>
-          </select>
-          <input 
+        <center> <h1>Cari Modul Praktikum</h1> 
+            <form>
+              <input  type="text" name="k" style={{width:'85%', height:'40px', background: '#00000', display:'inline-block'}} onChange={handleChangematkul} setValue={value.matkul}/>          
+              <input 
                 type="button" style={{ float:'right'}}
                 className="button"
                 id="search"
                 placeholder="Mata Kuliah"
                 value="Cari Modul"
                 onClick={getData}/>
+            </form>
+          </center>
 
           {/* Hasil Pencarian */}
           

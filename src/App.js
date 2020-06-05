@@ -5,6 +5,7 @@ import qs from 'qs';
 import logo from './halaman/logo.png';
 import './style.css';
 import Home from "./halaman/Home";
+import Name from "./halaman/Name";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <div className="App">
         <BrowserRouter> 
          <Route exact path="/" component={Home}></Route>
-      
+          <Route exact path="/name" component={Name}></Route>
         </BrowserRouter>
       </div>
     );
