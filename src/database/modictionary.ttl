@@ -3,114 +3,163 @@
 @prefix id: <http://www.modictionary.org/ns/data#>.
 
 
-<id:001> 
+id:001 
 		mp: matkul		"PACD";
 		mp: judulmodul	"Modul Praktikum Pengolahan dan Analisis Citra";
 		mp: dosen		"Setiawan Hadi";
 		mp: asprak		"Angga";
 		mp: semester	"6".
 
-<id:002>
+id:002
 		mp: matkul		"Softcom";
 		mp: judulmodul	"Modul Praktikum Software Computing";
 		mp: dosen		"Intan Nurma Yulita";
 		mp: asprak		"Angga";
 		mp: semester	"6".
 
-<id:003> 
+id:003 
 		mp: matkul		"Login";
 		mp: judulmodul	"Modul Praktikum Logika Informatika";
 		mp: dosen		"Ino Suryana";
 		mp: asprak		"Marcel".
 		mp: semester	"1".
 
-<id:004>
+id:004
 		mp: matkul		"Orarkom";
 		mp: judulmodul	"Modul Praktikum Arsitektur dan Organisasi Komputer";
 		mp: dosen		"Ino Suryana";
 		mp: asprak		"Argil".
 		mp: semester	"2".
 
-<id:005> 
+id:005 
 		mp: matkul		"Pemweb";
 		mp: judulmodul	"Modul Praktikum Pemrograman Web";
 		mp: dosen		"Rudi Rosadi";
 		mp: asprak		"Dila".
-		mp: semester	"4".
+		mp: semester	"3".
 
-<id:006>
+id:006
 		mp: matkul		"Jarkom";
 		mp: judulmodul	"Modul Praktikum Jaringan Komputer";
 		mp: dosen		"Aditya Pradana";
 		mp: asprak		"Achun".
 		mp: semester	"5".
 		
-<id:007>
+id:007
 		mp: matkul		"HCI";
 		mp: judulmodul	"Modul Praktikum Interaksi Manusia dan Komputer";
 		mp: dosen		"Mira Suryani";
 		mp: asprak		"Syafira".
 		mp: semester	"6".	
 
-<id:008>
+id:008
 		mp: matkul		"PPL";
 		mp: judulmodul	"Modul Praktikum Projek Prangkat Lunak";
 		mp: dosen		"Juli Rejito";
 		mp: asprak		"Islam".
 		mp: semester	"6".
 
-<id:009>
+id:009
 		mp: matkul		"Datware";
 		mp: judulmodul	"Modul Praktikum Data Warehous";
 		mp: dosen		"Intan Nurma Yulita";
 		mp: asprak		"Paquita".
 		mp: semester	"6".
 
-<id:010>
+id:010
 		mp: matkul		"Alprog";
 		mp: judulmodul	"Modul Praktikum Algoritma Pemrogrman";
 		mp: dosen		"Mira Suryani";
 		mp: asprak		"Achun".
 		mp: semester	"1".
 
-<id:011>
+id:011
 		mp: matkul		"Strukdat";
 		mp: judulmodul	"Modul Praktikum Struktur Data";
 		mp: dosen		"Aditya Pradana";
 		mp: asprak		"Argil".
 		mp: semester	"2".
 
-<id:012>
+id:012
 		mp: matkul		"Sisdat";
 		mp: judulmodul	"Modul Praktikum Sistem Database";
 		mp: dosen		"Juli Rejito";
 		mp: asprak		"Cryssa".
 		mp: semester	"2".
 
-<id:013>
+id:013
 		mp: matkul		"PBO";
 		mp: judulmodul	"Modul Praktikum Pemrograan Berorientasi Objek";
 		mp: dosen		"Erick Paulus";
 		mp: asprak		"Argil".
 		mp: semester	"3".
 
-<id:014>
+id:014
 		mp: matkul		"AI";
 		mp: judulmodul	"Modul Praktikum Artificial Intellegence";
 		mp: dosen		"Asep Sholahuddin";
 		mp: asprak		"Fahmi".
 		mp: semester	"4".
 
-<id:015>
+id:015
 		mp: matkul		"Sisdat";
 		mp: judulmodul	"Modul Praktikum Sistem Database";
 		mp: dosen		"Juli Rejito";
 		mp: asprak		"Cryssa".
 		mp: semester	"2".
 
-<id:016>
+id:016
 		mp: matkul		"Robotika";
 		mp: judulmodul	"Modul Praktikum Robotika";
 		mp: dosen		"Asep Sholahuddin";
 		mp: asprak		"Angga".
 		mp: semester	"5".
+
+
+#semester1
+id:003 mp:related id:010.
+id:010 mp:related id:003.
+
+#semester2
+id:004 mp:related id:011.
+id:004 mp:related id:012.
+id:004 mp:related id:015.
+id:011 mp:related id:004.
+id:011 mp:related id:012.
+id:011 mp:related id:015.
+id:012 mp:related id:004.
+id:012 mp:related id:011.
+id:012 mp:related id:015.
+id:015 mp:related id:004.
+id:015 mp:related id:011.
+id:015 mp:related id:012.
+
+#semester3
+id:005 mp:related id:013.
+id:013 mp:related id:005.
+
+#semester5
+id:006 mp:related id:016.
+id:016 mp:related id:006.
+
+#semester6
+id:001 mp:related id:002.
+id:001 mp:related id:007.
+id:001 mp:related id:008.
+id:001 mp:related id:009.
+id:002 mp:related id:001.
+id:002 mp:related id:007.
+id:002 mp:related id:008.
+id:002 mp:related id:009.
+id:007 mp:related id:001.
+id:007 mp:related id:002.
+id:007 mp:related id:008.
+id:007 mp:related id:009.
+id:008 mp:related id:001.
+id:008 mp:related id:002.
+id:008 mp:related id:007.
+id:008 mp:related id:009.
+id:009 mp:related id:001.
+id:008 mp:related id:002.
+id:008 mp:related id:007.
+id:008 mp:related id:008.
