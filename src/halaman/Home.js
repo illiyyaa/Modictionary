@@ -115,13 +115,14 @@ const result = value.mp.map((mp) =>
         <Link to="name" className="button"  style={{ float:'right'}} >Search by name</Link>
         </header>
         
+        
         {/* <div id="wrapper">
           
         </div> */}
         {/* 	<i style="color:#3d3d29;">hi</i> */}
         <div id="content">
           <center> <h1>Cari Modul Praktikum</h1> </center>
-          <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} setValue={value.semester} onChange={handleChangesemester}>
+          <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} setvalue={value.semester} onChange={handleChangesemester}>
             <option value="1">Semester 1</option>
             <option value="2">Semester 2</option>
             <option value="3">Semester 3</option>
@@ -139,7 +140,7 @@ const result = value.mp.map((mp) =>
 
           {/* Hasil Pencarian */}
           
-          <div class="result">
+          <div className="result">
             <center><h2>
               Hasil Pencarian Modul Praktikum
             </h2>

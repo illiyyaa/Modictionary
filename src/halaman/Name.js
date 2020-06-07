@@ -104,7 +104,7 @@ const result = value.mp.map((mp) =>
     return (
       <div>
         <title>Modictionary</title>
-        <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img className="img" src={logo} /> 
+        <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img className="img" alt="logo" src={logo} /> 
         Modictionary
         <Link to="/" className="button"  style={{ float:'right'}} >Search by semester</Link>
         </header>
@@ -115,8 +115,8 @@ const result = value.mp.map((mp) =>
         {/* 	<i style="color:#3d3d29;">hi</i> */}
         <div id="content">
         <center> <h1>Cari Modul Praktikum</h1> 
-            <form>
-              <input  type="text" name="k" style={{width:'85%', height:'40px', background: '#00000', display:'inline-block'}} onChange={handleChangematkul} setValue={value.matkul}/>          
+        <form action="./search.php" method="get">
+        <input  type="text" name="k" style={{width:'85%', height:'40px', background: '#00000', display:'inline-block'}} onChange={handleChangematkul} setValue={value.matkul}/>          
               <input 
                 type="button" style={{ float:'right'}}
                 className="button"
@@ -124,8 +124,24 @@ const result = value.mp.map((mp) =>
                 placeholder="Mata Kuliah"
                 value="Cari Modul"
                 onClick={getData}/>
-            </form>
-          </center>
+          <b>Search by</b>
+          <select className="box " name="by">
+          <option value>Sort</option>
+                <option value="ModulID">Id</option>
+                <option value="ModulTitle">Title</option>
+                <option value="MataKuliah">Matkul</option>
+                <option value="Asprak">Asprak</option>
+                <option value="Dosen">Dosen</option>
+                <option value="Semester">Semester</option>
+              </select>
+              <select className="box" name="sort">
+                <option value>None</option>
+                <option value="Asc">Asc</option>
+                <option value="Desc">Desc</option>
+              </select>
+              <input type="submit" className="button" defaultValue="Search" />
+        </form>
+        </center>
 
           {/* Hasil Pencarian */}
           
