@@ -33,7 +33,7 @@ export default function Name(){
                 mp:dosen    ?dosen ;
                 mp:asprak    ?asprak ;
                 mp:semester ?semester ;
-                FILTER (regex(?matkul, "^${value.input}","i") || regex(?dosen, "^${value.input}","i") || regex(?asprak, "^${value.input}","i"))
+                FILTER (regex(?matkul, "^${value.input}","i") || regex(?dosen, "^${value.input}","i") || regex(?asprak, "^${value.input}","i") || regex(?judulmodul, "^${value.input}","i" ))
         }`
         
           
