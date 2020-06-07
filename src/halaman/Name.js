@@ -6,29 +6,26 @@ import '../style.css';
 
 import { Link } from 'react-router-dom';
 
-export default function Tes(){
-  //deklarasi awal
+export default function Name(){
+
   const [value, setValue] = useState({
     mp: [],
-    judulmodul: '',
-    matkul:'',
-    dosen :'',
-    asprak :'',
-    semester : '',
+    input: ''
   });
-//ambil data
+
   const getData = async () => {
     const BASE_URL = "http://localhost:3030/modic-semweb/query";
 
     const headers = {
       'Accept': 'application/sparql-results+json,*/*;q=0.9',
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  };
-  const queryData = {
-    query:
-      `PREFIX mp: <http://www.modictionary.org/ns/praktikum#>
+    };
 
-      SELECT ?matkul ?judulmodul ?dosen ?asprak ?semester
+    const queryData = {
+      query:
+        `PREFIX mp: <http://www.modictionary.org/ns/praktikum#>
+
+        SELECT ?matkul ?judulmodul ?dosen ?asprak ?semester
         WHERE
         { ?id
           	    mp:matkul    ?matkul ;
@@ -36,49 +33,53 @@ export default function Tes(){
                 mp:dosen    ?dosen ;
                 mp:asprak    ?asprak ;
                 mp:semester ?semester ;
-              FILTER contains(lcase(str(?matkul)), lcase(str("${value.matkul}")))
-              FILTER contains(?semester, "${value.semester}")
-      }`
-  };
-  try {
-    const { data } = await axios(BASE_URL, {
-      method: 'POST',
-      headers,
-      data: qs.stringify(queryData)
-    });
-    console.log(data);
+                FILTER (regex(?matkul, "^${value.input}","i") || regex(?dosen, "^${value.input}","i") || regex(?asprak, "^${value.input}","i"))
+        }`
+        
+          
+        
+    };
 
-    // Convert Data
-    const formatted_data = data.results.bindings.map((mp, index) => formatter(mp, index));
-    console.log(formatted_data)
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: 'POST',
+        headers,
+        data: qs.stringify(queryData)
+      });
+      console.log(data);
 
+      // Convert Data
+      const formatted_data = data.results.bindings.map((mp, index) => formatter(mp, index));
+      console.log(formatted_data)
+
+      setValue({
+        ...value,
+        mp: formatted_data
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+
+  const formatter = (mp, index) => {
+    
+    return {
+      "id": index,
+      "judulmodul": mp.judulmodul.value,
+      "matkul": mp.matkul.value,
+      "dosen": mp.dosen.value,
+      "asprak": mp.asprak.value,
+      "semester" : mp.semester.value
+    }
+  }
+
+  const handleChange = event => {
     setValue({
       ...value,
-      mp: formatted_data
-    });
-  } catch (err) {
-    console.error(err);
+      'input': event.target.value
+    })
   }
-}
-//format
-const formatter = (mp, index) => {
-  return {
-    "id": index,
-    "judulmodul": mp.judulmodul.value,
-    "matkul": mp.matkul.value,
-    "dosen": mp.dosen.value,
-    "asprak": mp.asprak.value,
-    "semester" : mp.semester.value
-  }
-}
-
-//handlechange
-const handleChangematkul = event => {
-  setValue({
-    ...value,  
-    'matkul': event.target.value, 
-  });
-}
 
 const result = value.mp.map((mp) =>
   <div class="container" style={{display:'flex'}}>
@@ -114,33 +115,15 @@ const result = value.mp.map((mp) =>
         </div> */}
         {/* 	<i style="color:#3d3d29;">hi</i> */}
         <div id="content">
-        <center> <h1>Cari Modul Praktikum</h1> 
-        <form action="./search.php" method="get">
-        <input  type="text" name="k" style={{width:'85%', height:'40px', background: '#00000', display:'inline-block'}} onChange={handleChangematkul} setValue={value.matkul}/>          
-              <input 
+        <center> 
+          <h1>Cari Modul Praktikum</h1> 
+        <input  onChange={handleChange} type="text" placeholder="Masukkan nama mata kuliah, dosen, atau asprak" style={{width:'85%', height:'40px', background: '#00000', display:'inline-block'}}/>          
+              <button 
                 type="button" style={{ float:'right'}}
                 className="button"
-                id="search"
                 placeholder="Mata Kuliah"
-                value="Cari Modul"
-                onClick={getData}/>
-          <b>Search by</b>
-          <select className="box " name="by">
-          <option value>Sort</option>
-                <option value="ModulID">Id</option>
-                <option value="ModulTitle">Title</option>
-                <option value="MataKuliah">Matkul</option>
-                <option value="Asprak">Asprak</option>
-                <option value="Dosen">Dosen</option>
-                <option value="Semester">Semester</option>
-              </select>
-              <select className="box" name="sort">
-                <option value>None</option>
-                <option value="Asc">Asc</option>
-                <option value="Desc">Desc</option>
-              </select>
-              <input type="submit" className="button" defaultValue="Search" />
-        </form>
+                onClick={getData}>Search
+                </button>
         </center>
 
           {/* Hasil Pencarian */}
