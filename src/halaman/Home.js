@@ -10,10 +10,6 @@ export default function Home(){
   //deklarasi awal
   const [value, setValue] = useState({
     mp: [],
-    judulmodul: '',
-    matkul:'',
-    dosen :'',
-    asprak :'',
     semester : '',
   });
 //ambil data
