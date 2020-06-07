@@ -36,7 +36,7 @@ export default function Home(){
                 mp:dosen    ?dosen ;
                 mp:asprak    ?asprak ;
                 mp:semester ?semester ;
-              FILTER contains(lcase(str(?matkul)), lcase(str("${value.matkul}")))
+              ORDER BY DESC(?semester)
               FILTER contains(?semester, "${value.semester}")
       }`
   };
@@ -71,21 +71,13 @@ const formatter = (mp, index) => {
     "semester" : mp.semester.value
   }
 }
-
 //handlechange
-const handleChangematkul = event => {
-  setValue({
-    ...value,  
-    'matkul': event.target.value, 
-  });
-}
 const handleChangesemester = event => {
   setValue({
     ...value,  
     'semester': event.target.value, 
   });
 }
-
 const result = value.mp.map((mp) =>
   <div class="container" style={{display:'flex'}}>
   <div class="card">
@@ -107,6 +99,7 @@ const result = value.mp.map((mp) =>
   </div>
 )
 //layout
+    
     return (
       <div>
         <title>Modictionary</title>
@@ -121,14 +114,11 @@ const result = value.mp.map((mp) =>
         </div> */}
         {/* 	<i style="color:#3d3d29;">hi</i> */}
         <div id="content">
-          <center> <h1>Cari Modul Praktikum</h1> </center>
-          <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} setvalue={value.semester} onChange={handleChangesemester}>
-            <option value="1">Semester 1</option>
-            <option value="2">Semester 2</option>
-            <option value="3">Semester 3</option>
-            <option value="4">Semester 4</option>
-            <option value="5">Semester 5</option>
-            <option value="6">Semester 6</option>
+          <center> <h1>Cari Modul Praktikum </h1> </center>
+          <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} value={value.semester} onChange={handleChangesemester}>
+              {value.mp.map((mp) =>
+              <option key={mp.semester}>Semester {mp.semester}</option>)}        
+                   
           </select>
           <input 
                 type="button" style={{ float:'right'}}
@@ -137,7 +127,7 @@ const result = value.mp.map((mp) =>
                 placeholder="Mata Kuliah"
                 value="Cari Modul"
                 onClick={getData}/>
-
+        
           {/* Hasil Pencarian */}
           
           <div className="result">
@@ -151,3 +141,4 @@ const result = value.mp.map((mp) =>
       </div>
     );
   }
+
