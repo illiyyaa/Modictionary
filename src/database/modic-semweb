@@ -1,0 +1,114 @@
+@prefix mp:    <http://www.modictionary.org/ns/praktikum#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix id:    <http://www.modictionary.org/ns/data#> .
+
+id:001  mp:asprak      "Angga" ;
+        mp:dosen       "Setiawan Hadi" ;
+        mp:judulmodul  "Modul Praktikum Pengolahan dan Analisis Citra" ;
+        mp:matkul      "PACD" .
+
+id:002  mp:asprak      "Angga" ;
+        mp:dosen       "Intan Nurma Yulita" ;
+        mp:judulmodul  "Modul Praktikum Software Computing" ;
+        mp:matkul      "Softcom" .
+
+id:003  mp:asprak      "Marcel" ;
+        mp:dosen       "Ino Suryana" ;
+        mp:judulmodul  "Modul Praktikum Logika Informatika" ;
+        mp:matkul      "Login" .
+
+id:004  mp:asprak      "Argil" ;
+        mp:dosen       "Ino Suryana" ;
+        mp:judulmodul  "Modul Praktikum Arsitektur dan Organisasi Komputer" ;
+        mp:matkul      "Orarkom" .
+
+id:005  mp:asprak      "Dila" ;
+        mp:dosen       "Rudi Rosadi" ;
+        mp:judulmodul  "Modul Praktikum Pemrograman Web" ;
+        mp:matkul      "Pemweb" .
+
+id:006  mp:asprak      "Achun" ;
+        mp:dosen       "Aditya Pradana" ;
+        mp:judulmodul  "Modul Praktikum Jaringan Komputer" ;
+        mp:matkul      "Jarkom" .
+
+id:007  mp:asprak      "Syafira" ;
+        mp:dosen       "Mira Suryani" ;
+        mp:judulmodul  "Modul Praktikum Interaksi Manusia dan Komputer" ;
+        mp:matkul      "HCI" .
+
+id:008  mp:asprak      "Islam" ;
+        mp:dosen       "Juli Rejito" ;
+        mp:judulmodul  "Modul Praktikum Projek Perangkat Lunak" ;
+        mp:matkul      "PPL" .
+
+id:009  mp:asprak      "Paquita" ;
+        mp:dosen       "Intan Nurma Yulita" ;
+        mp:judulmodul  "Modul Praktikum Data Warehouse" ;
+        mp:matkul      "Datware" .
+
+id:010  mp:asprak      "Achun" ;
+        mp:dosen       "Mira Suryani" ;
+        mp:judulmodul  "Modul Praktikum Algoritma dan Pemrograman" ;
+        mp:matkul      "Alprog" .
+
+id:011  mp:asprak      "Argil" ;
+        mp:dosen       "Aditya Pradana" ;
+        mp:judulmodul  "Modul Praktikum Struktur Data" ;
+        mp:matkul      "Strukdat" .
+
+id:012  mp:asprak      "Cryssa" ;
+        mp:dosen       "Juli Rejito" ;
+        mp:judulmodul  "Modul Praktikum Interaksi Manusia dan Komputer" ;
+        mp:matkul      "Sisdat" .
+
+id:013  mp:asprak      "Argil" ;
+        mp:dosen       "Erick Paulus" ;
+        mp:judulmodul  "Modul Praktikum Pemrograman Berorientasi Objek" ;
+        mp:matkul      "PBO" .
+
+id:014  mp:asprak      "Fahmi" ;
+        mp:dosen       "Asep Sholahuddin" ;
+        mp:judulmodul  "Modul Praktikum Artificial Intellegence" ;
+        mp:matkul      "AI" .
+
+id:015  mp:asprak      "Angga" ;
+        mp:dosen       "Asep Sholahuddin" ;
+        mp:judulmodul  "Modul Praktikum Robotika" ;
+        mp:matkul      "Robotika" .
+       
+id:016
+		mp:matkul		"Robotika";
+		mp:judulmodul	"Modul Praktikum Robotika";
+		mp:dosen		"Asep Sholahuddin";
+		mp:asprak		"Angga".
+
+id:smt01 mp:semester "1" .
+id:smt02 mp:semester "2" .
+id:smt03 mp:semester "3" .
+id:smt04 mp:semester "4" .
+id:smt05 mp:semester "5" .
+id:smt06 mp:semester "6" .
+
+#semester tracking
+id:003 mp:smt id:smt01 .
+id:010 mp:smt id:smt01 .
+
+id:004 mp:smt id:smt02 .
+id:011 mp:smt id:smt02 .
+id:012 mp:smt id:smt02 .
+
+id:005 mp:smt id:smt03 .
+id:013 mp:smt id:smt03 .
+
+id:006 mp:smt id:smt04 .
+id:014 mp:smt id:smt04 .
+
+id:015 mp:smt id:smt05 .
+id:016 mp:smt id:smt05 .
+
+id:001 mp:smt id:smt06 .
+id:002 mp:smt id:smt06 .
+id:007 mp:smt id:smt06 .
+id:008 mp:smt id:smt06 .
+id:009 mp:smt id:smt06 .
