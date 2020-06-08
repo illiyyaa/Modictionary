@@ -83,32 +83,32 @@ id:016
 		mp:dosen		"Asep Sholahuddin";
 		mp:asprak		"Angga".
 
-id:smt01 mp:semester "1" .
-id:smt02 mp:semester "2" .
-id:smt03 mp:semester "3" .
-id:smt04 mp:semester "4" .
-id:smt05 mp:semester "5" .
-id:smt06 mp:semester "6" .
+id:smt01 mp:smt "1" .
+id:smt02 mp:smt "2" .
+id:smt03 mp:smt "3" .
+id:smt04 mp:smt "4" .
+id:smt05 mp:smt "5" .
+id:smt06 mp:smt "6" .
 
 #semester tracking
-id:003 mp:smt id:smt01 .
-id:010 mp:smt id:smt01 .
+id:003 mp:semester id:smt01 .
+id:010 mp:semester id:smt01 .
 
-id:004 mp:smt id:smt02 .
-id:011 mp:smt id:smt02 .
-id:012 mp:smt id:smt02 .
+id:004 mp:semester id:smt02 .
+id:011 mp:semester id:smt02 .
+id:012 mp:semester id:smt02 .
 
-id:005 mp:smt id:smt03 .
-id:013 mp:smt id:smt03 .
+id:005 mp:semester id:smt03 .
+id:013 mp:semester id:smt03 .
 
-id:006 mp:smt id:smt04 .
-id:014 mp:smt id:smt04 .
+id:006 mp:semester id:smt04 .
+id:014 mp:semester id:smt04 .
 
-id:015 mp:smt id:smt05 .
-id:016 mp:smt id:smt05 .
+id:015 mp:semester id:smt05 .
+id:016 mp:semester id:smt05 .
 
-id:001 mp:smt id:smt06 .
-id:002 mp:smt id:smt06 .
-id:007 mp:smt id:smt06 .
-id:008 mp:smt id:smt06 .
-id:009 mp:smt id:smt06 .
+id:001 mp:semester id:smt06 .
+id:002 mp:semester id:smt06 .
+id:007 mp:semester id:smt06 .
+id:008 mp:semester id:smt06 .
+id:009 mp:semester id:smt06 .
