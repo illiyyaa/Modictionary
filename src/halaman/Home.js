@@ -23,17 +23,15 @@ export default function Home(){
   const queryData = {
     query:
       `PREFIX mp: <http://www.modictionary.org/ns/praktikum#>
+      PREFIX id: <http://www.modictionary.org/ns/data#>
 
       SELECT ?matkul ?judulmodul ?dosen ?asprak ?semester
         WHERE
-        { ?id
-          	    mp:matkul    ?matkul ;
-                mp:judulmodul    ?judulmodul ;
-                mp:dosen    ?dosen ;
-                mp:asprak    ?asprak ;
-                mp:semester ?semester ;
-              ORDER BY DESC(?semester)
-              FILTER contains(?semester, "${value.semester}")
+        { ?semester mp:semester id:${value.semester};
+                    mp:matkul    ?matkul ;
+                    mp:judulmodul    ?judulmodul ;
+                    mp:dosen    ?dosen ;
+                    mp:asprak    ?asprak ;
       }`
   };
   try {
@@ -99,7 +97,7 @@ const result = value.mp.map((mp) =>
     return (
       <div>
         <title>Modictionary</title>
-        <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img className="img" src={logo} /> 
+        <header style={{color: '#e7e7e7', backgroundColor: '#0e0d3d', display: 'block', height : '50px'}}><img alt="" className="img" src={logo} /> 
         Modictionary
         <Link to="name" className="button"  style={{ float:'right'}} >Search by name</Link>
         </header>
@@ -112,9 +110,12 @@ const result = value.mp.map((mp) =>
         <div id="content">
           <center> <h1>Cari Modul Praktikum </h1> </center>
           <select style={{width:'85%', height:'45px', background: '#0e0d3d', display:'inline-block', color:'white'}} value={value.semester} onChange={handleChangesemester}>
-              {value.mp.map((mp) =>
-              <option key={mp.semester}>Semester {mp.semester}</option>)}        
-                   
+              <option value="smt01">Semester 1</option>        
+              <option value="smt02">Semester 2</option>
+              <option value="smt03">Semester 3</option>
+              <option value="smt04">Semester 4</option>
+              <option value="smt05">Semester 5</option>
+              <option value="smt06">Semester 6</option>
           </select>
           <input 
                 type="button" style={{ float:'right'}}
