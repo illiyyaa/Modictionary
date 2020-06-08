@@ -14,7 +14,7 @@ export default function Name(){
   });
 
   const getData = async () => {
-    const BASE_URL ="https://qrary-fuseki-service.herokuapp.com";
+    const BASE_URL ="https://qrary-fuseki-service.herokuapp.com/modic-semweb/query";
 
     const headers = {
       'Accept': 'application/sparql-results+json,*/*;q=0.9',
