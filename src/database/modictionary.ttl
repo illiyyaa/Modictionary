@@ -88,10 +88,10 @@ id:014
 		mp: asprak		"Fahmi".		
 
 id:015
-		mp: matkul		"Sisdat";
-		mp: judulmodul	"Modul Praktikum Sistem Database";
-		mp: dosen		"Juli Rejito";
-		mp: asprak		"Cryssa".		
+		mp: matkul		"RPL";
+		mp: judulmodul	"Modul Praktikum Rekayasa Perangkat Lunak";
+		mp: dosen		"R Sudrajat";
+		mp: asprak		"Raditya".		
 
 id:016
 		mp: matkul		"Robotika";
@@ -104,6 +104,7 @@ id:016
 id:smt01 mp:semester "1";
 id:smt02 mp:semester "2";
 id:smt03 mp:semester "3";
+id:smt04 mp:semester "4";
 id:smt05 mp:semester "5";
 id:smt06 mp:semester "6";
 
@@ -114,12 +115,14 @@ id:010 mp:semester id:smt01;
 id:004 mp:semester id:smt02;
 id:011 mp:semester id:smt02;
 id:012 mp:semester id:smt02;
-id:015 mp:semester id:smt02;
 
 id:005 mp:semester id:smt03;
 id:013 mp:semester id:smt03;
 
-id:006 mp:semester id:smt05;
+id:006 mp:semester id:smt04;
+id:014 mp:semester id:smt04;
+
+id:015 mp:semester id:smt05;
 id:016 mp:semester id:smt05;
 
 id:001 mp:semester id:smt06;
